@@ -1,0 +1,59 @@
+1. In this project we are going to do api call to take in data
+2. we are going to make here custom hooks
+3. we will see how to optimize the webpage for performance
+hooks in majority of cases return js only, so make it in a .js file
+
+
+  const [count, setCount] = useState(0)
+
+a hook basically returns an array containing a variable and a fxn
+custom hooks can use the builtin hooks also
+
+whenever make a custom hook start its name with use: it is a professional rule
+
+koi basic fxn jo js return kr rha ha is a custom hook
+
+we can take api calls from open source projects
+
+
+mostly data from api calles is never received in json but always in string format...so we need to convert them to json...so reactQuery,axios handles them by default
+
+--------------------
+.then() is called when the Promise is successfully resolved.
+.catch() is called when the Promise is rejected (an error occurs).
+
+
+//app.jsx
+
+. New Props Introduced
+🆕 amount
+It is the value shown in the <input> box.
+
+It is a controlled input, meaning its value is fully controlled by React state.
+
+🆕 onAmountChange
+It is a callback function.
+
+It is called when the user types something in the input box.
+
+It passes the numeric value (Number(e.target.value)) back to the parent component.
+
+🆕 onCurrencyChange
+Callback function for when user selects a different currency from the dropdown.
+
+🆕 currencyOption = []
+It is an array of currency options (like ["usd", "inr", "eur"]).
+
+It will be mapped to <option> elements for the <select> dropdown (though not yet used — currently hardcoded as just one usd).
+
+🆕 selectCurrency = "usd"
+The currently selected currency in the dropdown. Also controlled by React state.
+
+Default value is "usd".
+
+🆕 amountDisable = false, currencyDisable = false
+These control whether the input and dropdown should be disabled (i.e., not editable).
+The disabled property of an HTML <input> element or a <label> element is used to indicate that the element is not interactive or cannot be modified by the user.  
+
+Useful if you want to lock the input under certain conditions.
+
