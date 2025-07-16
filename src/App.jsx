@@ -21,7 +21,7 @@ function App() {
   const convert = () => {
     const numericAmount = parseFloat(amount)
     if (!isNaN(numericAmount)) {
-      const result = numericAmount * currencyInfo[to]
+      const result = numericAmount * currencyInfo[to];//numericAmount is the exchange rate with which we are multiplying the value in from, the numericAmt comes from the api
       setConvertedAmount(result.toFixed(2))
     }
   }
