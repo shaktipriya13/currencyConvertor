@@ -19,11 +19,7 @@ Hosted Live 👉 [currency-convertor-shaktip.netlify.app](https://currency-conve
 
 ## 📸 Screenshots
 
-| Input Screen | Converted Result |
-|--------------|------------------|
-| ![input](./screenshots/input.png) | ![result](./screenshots/result.png) |
-
-> 📌 *Add your own screenshots in a `/screenshots` folder*
+<img width="1398" height="791" alt="image" src="https://github.com/user-attachments/assets/bbcc186d-1725-4a26-8ba6-bb12f23b4739" />
 
 ---
 
