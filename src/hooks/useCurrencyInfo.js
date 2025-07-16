@@ -5,6 +5,7 @@
 import { useState, useEffect } from "react";
 
 function useCurrencyInfo(currency) {
+    // currency is passed as an argument to the useCurrencyInfo hook. It’s not a prop because the hook is not a component, it’s just a function returning some logic (exchange rates in this case).
     // our custom hook takes argument : currency
     // this hook is going to return some data
     const [data, setData] = useState({})//an empty object is passed 
