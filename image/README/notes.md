@@ -69,3 +69,69 @@ The input is made number-only using JavaScript, not HTML:
 All non-digit characters are removed via .replace(/\D/g, "")
 
 It's a controlled input, so only cleaned values appear
+
+Sure! Here's a **short and clear explanation** of how your currency converter project works — including the **motto**, **how it works behind the scenes**, and **math logic**:
+
+---
+
+### 🎯 **Motto (Goal)**
+
+To **convert an amount from one currency to another** (e.g., USD to INR) using real-time exchange rates from a public API.
+
+---
+
+### ⚙️ **How It Works (Behind the Scenes)**
+
+1. **User selects currencies (From & To)** using dropdowns.
+2. **User enters an amount** (e.g., 100).
+3. On **form submit**:
+
+   * Your app calls an **API** (e.g., `https://api.exchangerate-api.com/v4/latest/usd`) using a custom hook (`useCurrencyInfo`).
+   * This API returns a big list of **exchange rates** like:
+
+     ```json
+     {
+       "usd": 1,
+       "inr": 83.2,
+       "eur": 0.92,
+       ...
+     }
+     ```
+4. Your app **picks the rate** for the `to` currency (e.g., `inr`) from that list.
+
+---
+
+### 🧮 **Math Behind It**
+
+If:
+
+* From = `usd`
+* To = `inr`
+* Amount = `100`
+* Rate = `83.2` (i.e., 1 USD = 83.2 INR)
+
+Then:
+
+```js
+convertedAmount = amount * rate = 100 * 83.2 = 8320 INR
+```
+
+This `convertedAmount` is then displayed in the output field.
+
+---
+
+### 🔁 Optional: Swap Function
+
+The **swap button** just swaps the `from` and `to` currencies and also exchanges the values of `amount` and `convertedAmount`.
+
+---
+
+### ✅ Summary
+
+* Fetches **real-time currency rates** from an API.
+* Converts `amount * rate` to get the result.
+* Lets users **swap currencies** easily.
+* Clean React design using hooks and components.
+
+Let me know if you want a diagram or flowchart too!
+
